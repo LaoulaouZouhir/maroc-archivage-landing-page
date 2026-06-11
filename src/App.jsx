@@ -9,11 +9,13 @@ import UseCases from './components/UseCases';
 import Testimonial from './components/Testimonial';
 import Updates from './components/Updates';
 import CTA from './components/CTA';
+import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
+import FloatingWhatsApp from './components/FloatingWhatsApp';
 
 function App() {
   return (
-    <div className="text-text font-body-lg min-h-screen antialiased selection:bg-primary selection:text-white bg-page-bg">
+    <div className="text-text font-body-lg min-h-screen antialiased selection:bg-primary selection:text-white bg-page-bg relative">
       <Navbar />
       <main>
         <Hero />
@@ -26,8 +28,10 @@ function App() {
         <Testimonial />
         <Updates />
         <CTA />
+        <ContactSection />
       </main>
       <Footer />
+      <FloatingWhatsApp />
     </div>
   )
 }

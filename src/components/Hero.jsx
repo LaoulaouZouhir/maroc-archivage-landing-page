@@ -28,36 +28,40 @@ export default function Hero() {
   }, { scope: heroRef });
 
   return (
-    <section ref={heroRef} className="pt-[160px] px-margin max-w-[1728px] mx-auto flex flex-col items-center text-center relative overflow-visible bg-page-bg pb-[100px] min-h-screen justify-center">
+    <section ref={heroRef} className="px-margin max-w-[1728px] mx-auto flex flex-col items-center text-center relative overflow-hidden bg-page-bg min-h-[85vh] md:min-h-screen">
       
-      <div className="flex flex-col items-center">
-        <h1 className="hero-title text-3xl md:text-4xl font-semibold text-text tracking-tight mb-4">
+      <div className="absolute top-[12vh] md:top-[18vh] left-0 right-0 z-10 px-4 w-full mt-4">
+        <h1 className="hero-title text-2xl md:text-4xl font-semibold text-slate-900 tracking-tight">
           Donnez une nouvelle dimension <br />
-          <span className="text-4xl md:text-6xl font-bold mt-1 leading-none tracking-tighter block pt-2">
+          <span className="text-3xl md:text-5xl font-bold mt-1 leading-none tracking-tighter block pt-2 text-primary">
             à vos archives
           </span>
         </h1>
-        <p className="hero-text font-body-lg text-body-md md:text-body-lg text-muted max-w-2xl mx-auto mb-[40px]">
+      </div>
+
+      <div className="absolute bottom-[8vh] md:bottom-[12vh] left-0 right-0 z-10 px-4 w-full">
+        <p className="hero-text font-body-lg text-sm md:text-lg text-slate-700 max-w-2xl mx-auto font-medium">
           Libérez totalement le potentiel de vos données et documents grâce à notre expertise en gestion de l'information et digitalisation.
         </p>
       </div>
 
-      <div className="hero-video-container w-full max-w-[500px] relative z-10 aspect-video mix-blend-multiply">
+      <div className="hero-video-container absolute inset-0 w-full h-full z-0 pointer-events-none overflow-hidden">
         <video
           ref={videoRef}
-          src="/hero_video.mp4"
-          className="w-full h-full object-contain"
+          className="w-full h-full object-cover scale-[1.05]"
           muted
           playsInline
           autoPlay
           loop
           preload="auto"
-          style={{ 
-            WebkitMaskImage: 'radial-gradient(circle, black 50%, transparent 100%)', 
-            maskImage: 'radial-gradient(circle, black 50%, transparent 100%)',
-            filter: 'brightness(1.1) contrast(1.15)'
-          }}
-        />
+        >
+          <source src="/hero_video_desktop.mp4" media="(min-width: 768px)" type="video/mp4" />
+          <source src="/hero_video.mp4" type="video/mp4" />
+        </video>
+        {/* Soft, tall ambient bottom fade */}
+        <div className="absolute bottom-0 left-0 right-0 h-[25vh] bg-gradient-to-t from-page-bg to-transparent z-10"></div>
+        {/* Larger, much smoother bottom-right corner fade */}
+        <div className="absolute bottom-0 right-0 w-[60vw] max-w-[700px] h-[40vh] bg-gradient-to-tl from-page-bg to-transparent z-10"></div>
       </div>
 
     </section>

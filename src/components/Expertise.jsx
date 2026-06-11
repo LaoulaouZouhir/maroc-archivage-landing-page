@@ -15,7 +15,7 @@ export default function Expertise() {
       desc: "Transformation de vos archives papier en actifs numériques indexés et recherchables instantanément.",
       icon: "🖨️",
       color: "from-blue-500/20 to-blue-600/5",
-      img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDGxwLNMP2KVAWtuqvWXiFZkBm5YgSXjM45PkkRPvB3NsuAPX4Nse6nAySmOSPxXiaWvlTk0fB0Pagx0EkNf1L8x3CFyxgAWpQbdP2z4ZXhaiVorAeLCKBcI2qvs9oG9HqdMdiJrUYvBgL1Dr8nKNzygffqFMIlgWyshucf41s65I_hV3kCGtjFYShml4zOn9O6MuvVW54WVcjP7bBLEAYguBfutmc0Yq73HP9-yBiY6b98be0hC6KYAZFesHH3FkL4Gx0Yks2fyrpu"
+      img: "/img/exp_num.png"
     },
     {
       title: "Archivage Physique",
@@ -23,7 +23,7 @@ export default function Expertise() {
       desc: "Conservation externalisée de vos documents dans des conditions de sécurité et de confidentialité optimales.",
       icon: "📦",
       color: "from-slate-500/20 to-slate-600/5",
-      img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDRI6ZfedfqJ42Kz8fkZTlqC5CbQ5Q_0kVkLxIu7Xh8-ABjTl2K4v_yJEBQE1wi3AZMYD9IMvFxFOJyc86piFVAfQ0g6nyc1fRoYl7wB1_YDB3zlrCqOGtEow28qlTRV6LL9s1-rRPvAYojJgQhjJ9ERQ7Jf-IhHeg0bAcA4QWd3YKyDnVxSjTGeJ--ir7xqCghMtZPJ5OjvBwWSTiw7xPHbFrwOa_f5RTQGV6WOEWxuC-xwV7Ayb1q0kBzYF_oQHCxP3Dn3PL-aewa"
+      img: "/img/exp_arch.png"
     },
     {
       title: "Plateforme GED",
@@ -31,7 +31,7 @@ export default function Expertise() {
       desc: "Déploiement de solutions logicielles sur mesure pour centraliser et distribuer l'information.",
       icon: "💻",
       color: "from-indigo-500/20 to-indigo-600/5",
-      img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCRd7pAyBrUx31zx6klyDiCWD04EiIaiDfNYNdGO8HozSTYH3bTc4IhWoBbOh4CpW4jAmMk2H_ecdJwzZL71ta4NvHIyMqapKo2BK36h0hn674xlIS0FoLhl6jQwDTwu_Idk9ZLj6MN8k5s-VrWMSox9J5YNpnlpqVlAVnzCXtAeDkwyvNWzXtGXt76wUk85CfXUmdE9Vi6RxqxkyBORzc1__OdpVEqiYNrMD1dKFJIU7gC874F--k_Kf5C1_yMSnhoytWkS9XWPwsm"
+      img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
     },
     {
       title: "Conformité & Légal",
@@ -39,7 +39,7 @@ export default function Expertise() {
       desc: "Application rigoureuse des durées de conservation légales et destruction certifiée des documents obsolètes.",
       icon: "⚖️",
       color: "from-emerald-500/20 to-emerald-600/5",
-      img: "https://lh3.googleusercontent.com/aida-public/AB6AXuAJHfj4_xGj0yuLj8FKt6X72bCIskF-kJl3LA3T3_1-Qfv6mfKwCLXqKuU41nv1J3p_M1VLaKyUwt7jymaxu9IqrMBeOZwhDvKB2NclDw7qctzcy_CAPxlD6DRpxJ5uMf6G4nCRrvnMp59n2r2y9HaRxoemHYv9Vm4p_TMdRUwKitMvWXTR13rOY5umPLmIVd6L5RMbQMm1ZFC8-WMQdUrzWugK5J4Eh0Ph9XOn2e4G84KG4Az4KXAh3-n2Y52A1ycQ8Ow3OGXHosuz"
+      img: "https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?auto=format&fit=crop&w=800&q=80"
     },
     {
       title: "Audit & Conseil",
@@ -47,7 +47,7 @@ export default function Expertise() {
       desc: "Analyse de vos processus documentaires existants et recommandation d'une stratégie cible performante.",
       icon: "📋",
       color: "from-purple-500/20 to-purple-600/5",
-      img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDbheL8VQt2V3qxmEXBukkZcNptuzepd42MEKEg9-qDVlpepWCcPZIR5s9MzcSFv4FH-6IuiF9uWjjxSWg2IQ-A_CdbSU7IbdGFdbRPcFqz1DyoSSA1w-kOaLoqdLsFYVQuBBDENJ0aa2OHfgIFFJ1Y7GClriULppWYz7d7fGuv-GPC_YjW-mQfwtuP1rbtxhAb-IzFfX6o7nj41jI_XdcVGj6on-6bwuQl_W5NMa4g3MvEW_sVCeo4Tgf1W3QkrnYFQKfSyl3ScLps"
+      img: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80"
     }
   ];
 
@@ -67,36 +67,37 @@ export default function Expertise() {
     const scrollContainer = document.querySelector('.scroll-container');
 
     // Horizontal scroll
-    gsap.to(scrollContainer, {
-      x: () => {
-        const maxScroll = scrollContainer.scrollWidth - window.innerWidth;
-        return maxScroll > 0 ? -maxScroll : 0;
-      },
-      ease: 'none',
-      scrollTrigger: {
-        trigger: containerRef.current,
-        start: 'top top',
-        end: 'bottom bottom',
-        scrub: 1,
-        invalidateOnRefresh: true,
-      }
-    });
+    const maxScroll = scrollContainer.scrollWidth - window.innerWidth;
+    if (maxScroll > 0) {
+      gsap.to(scrollContainer, {
+        x: -maxScroll,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: containerRef.current,
+          pin: true,
+          start: 'top 100px',
+          end: () => "+=" + maxScroll,
+          scrub: 1,
+          invalidateOnRefresh: true,
+        }
+      });
+    }
 
   }, { scope: containerRef });
 
   return (
-    <section ref={containerRef} className="h-[300vh] w-full bg-page-bg relative">
-      <div className="sticky top-0 h-screen w-full flex flex-col justify-center overflow-hidden">
+    <section id="expertise" className="bg-page-bg relative pt-8">
+      <div ref={containerRef} className="h-[75vh] min-h-[550px] max-h-[800px] w-full flex flex-col items-center justify-center overflow-hidden relative">
         
-        <div className="expertise-header absolute top-[10%] w-full text-center z-10 px-4">
+        <div className="expertise-header w-full text-center z-10 px-4 mb-10">
           <h2 className="font-display text-[36px] md:text-[48px] font-bold text-text leading-tight">
             Notre Expertise
           </h2>
         </div>
 
         {/* Horizontal Scroll Container */}
-        <div className="scroll-container flex gap-6 md:gap-8 px-4 md:px-12 items-center w-max mt-[80px]">
-          {[...expertiseItems, ...expertiseItems].map((item, index) => (
+        <div className="scroll-container flex gap-6 md:gap-8 px-4 md:px-12 items-center w-max mx-auto">
+          {expertiseItems.map((item, index) => (
             <div 
               key={index} 
               className="carousel-card shrink-0 w-[280px] h-[380px] md:w-[320px] md:h-[420px] bg-white rounded-[32px] overflow-hidden shadow-2xl border border-line flex flex-col group cursor-pointer"
@@ -104,6 +105,7 @@ export default function Expertise() {
               {/* Image Section */}
               <div className="h-1/2 w-full relative overflow-hidden">
                 <img 
+                  loading="lazy"
                   src={item.img} 
                   alt={item.title} 
                   className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:scale-110 transition-transform duration-700"

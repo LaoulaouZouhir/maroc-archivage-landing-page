@@ -11,7 +11,7 @@ export default function CTA() {
           className="relative z-10 flex flex-col items-center"
         >
           <div className="w-12 h-12 rounded-full border border-primary flex items-center justify-center mb-12 bg-white">
-            <img alt="Maroc Archivage Logo" className="w-full h-full object-contain p-1.5" src="https://lh3.googleusercontent.com/aida/AP1WRLvsSgbGKdbcLKOA2HcB3eeu_aMqqcULpCSL4w4vIud0k19Nos0f79MOooDkWKD2PYf3YL7YbMwyFVO3vnfAS4ktIOSvjjM3iJ0f9ev9xYZdRHxZHaugY8uWL6eN6knezKF3lM8MH76kwLHZsuQHrUc22Sq3dzRucrD8I8qGic_8JzTlXHvexEO0n0PcZAikUbiccpQMJK17Orh6grziLuFhveX91WEnDCK6dqLOJDmkSXP5b719rbVk7Jw"/>
+            <img loading="lazy" alt="Maroc Archivage Logo" className="w-full h-full object-contain p-1.5" src="/img/logo.png"/>
           </div>
           <h2 className="font-display text-[56px] md:text-[80px] font-bold text-primary tracking-tighter leading-[1.05] mb-12 max-w-4xl text-balance">
             L'excellence en gestion de l'information

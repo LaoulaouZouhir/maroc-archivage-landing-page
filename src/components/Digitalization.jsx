@@ -21,7 +21,7 @@ export default function Digitalization() {
   ];
 
   return (
-    <section className="py-[120px] px-margin max-w-[1728px] mx-auto bg-page-bg">
+    <section className="py-12 md:py-24 px-margin max-w-[1728px] mx-auto bg-page-bg">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-[100px] items-center">
         
         <div className="flex flex-col justify-center h-full max-w-lg order-2 lg:order-1">
@@ -68,7 +68,7 @@ export default function Digitalization() {
           <div className="w-full max-w-lg bg-white/80 backdrop-blur-xl rounded-3xl shadow-2xl p-8 border border-white/50">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-[24px] h-[24px] rounded-full border border-primary flex items-center justify-center shrink-0 bg-white">
-                <img alt="Logo" className="w-full h-full object-contain p-0.5" src="https://lh3.googleusercontent.com/aida/AP1WRLvsSgbGKdbcLKOA2HcB3eeu_aMqqcULpCSL4w4vIud0k19Nos0f79MOooDkWKD2PYf3YL7YbMwyFVO3vnfAS4ktIOSvjjM3iJ0f9ev9xYZdRHxZHaugY8uWL6eN6knezKF3lM8MH76kwLHZsuQHrUc22Sq3dzRucrD8I8qGic_8JzTlXHvexEO0n0PcZAikUbiccpQMJK17Orh6grziLuFhveX91WEnDCK6dqLOJDmkSXP5b719rbVk7Jw"/>
+                <img loading="lazy" alt="Logo" className="w-full h-full object-contain p-0.5" src="/img/logo.png"/>
               </div>
               <span className="font-label text-xs font-bold text-primary">PLATEFORME GED</span>
             </div>

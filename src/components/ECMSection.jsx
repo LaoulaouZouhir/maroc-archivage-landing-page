@@ -17,7 +17,7 @@ export default function ECMSection() {
   ];
 
   return (
-    <section className="py-[120px] px-margin max-w-[1728px] mx-auto bg-page-bg">
+    <section id="services" className="py-12 md:py-24 px-margin max-w-[1728px] mx-auto bg-page-bg">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-[100px] items-center">
         <motion.div 
           initial={{ opacity: 0, x: -50 }}

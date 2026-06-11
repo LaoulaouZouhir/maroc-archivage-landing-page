@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 export default function Manifesto() {
   return (
-    <section className="py-[200px] px-margin max-w-[1728px] mx-auto relative flex flex-col items-center text-center bg-page-bg">
+    <section id="about" className="py-16 md:py-32 px-margin max-w-[1728px] mx-auto relative flex flex-col items-center text-center bg-page-bg">
       <div className="absolute top-0 right-[10%] w-[400px] h-[400px] opacity-10 pointer-events-none">
         <svg className="w-full h-full animate-spin-slow" fill="none" stroke="url(#manifesto-grad)" strokeWidth="0.5" viewBox="0 0 100 100">
           <defs>
