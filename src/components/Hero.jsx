@@ -35,7 +35,7 @@ export default function Hero() {
         </p>
       </div>
 
-      <div className="hero-video-container absolute inset-0 w-full h-full z-0 pointer-events-none overflow-hidden">
+      <div className="hero-video-container absolute inset-0 w-full h-full z-0 pointer-events-none overflow-hidden bg-slate-200/60 animate-pulse">
         <video
           ref={videoRef}
           className="w-full h-full object-cover scale-[1.05]"
