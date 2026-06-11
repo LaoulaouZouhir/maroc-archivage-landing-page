@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
 
 export default function Navbar() {
-  const scrollTo = (id) => {
+  const scrollTo = (e, id) => {
+    e?.preventDefault();
     const el = document.getElementById(id);
     if (el) {
       el.scrollIntoView({ behavior: 'smooth' });
@@ -38,7 +39,8 @@ export default function Navbar() {
         {/* Links */}
         <nav className="flex items-center gap-3 md:gap-8 px-4 md:px-8">
           <motion.a 
-            onClick={() => scrollTo('services')}
+            href="#services"
+            onClick={(e) => scrollTo(e, 'services')}
             whileHover={{ scale: 1.05, color: '#ffffff' }}
             whileTap={{ scale: 0.95 }}
             className="font-label text-[11px] md:text-[13px] text-white/80 hover:text-white cursor-pointer tracking-wide" 
@@ -46,7 +48,8 @@ export default function Navbar() {
             Services
           </motion.a>
           <motion.a 
-            onClick={() => scrollTo('expertise')}
+            href="#expertise"
+            onClick={(e) => scrollTo(e, 'expertise')}
             whileHover={{ scale: 1.05, color: '#ffffff' }}
             whileTap={{ scale: 0.95 }}
             className="font-label text-[11px] md:text-[13px] text-white/80 hover:text-white cursor-pointer tracking-wide" 
@@ -54,7 +57,8 @@ export default function Navbar() {
             Expertise
           </motion.a>
           <motion.a 
-            onClick={() => scrollTo('updates')}
+            href="#updates"
+            onClick={(e) => scrollTo(e, 'updates')}
             whileHover={{ scale: 1.05, color: '#ffffff' }}
             whileTap={{ scale: 0.95 }}
             className="font-label text-[11px] md:text-[13px] text-white/80 hover:text-white cursor-pointer tracking-wide" 
@@ -62,7 +66,8 @@ export default function Navbar() {
             Actualités
           </motion.a>
           <motion.a 
-            onClick={() => scrollTo('contact')}
+            href="#contact"
+            onClick={(e) => scrollTo(e, 'contact')}
             whileHover={{ scale: 1.05, color: '#ffffff' }}
             whileTap={{ scale: 0.95 }}
             className="font-label text-[11px] md:text-[13px] text-white/80 hover:text-white cursor-pointer tracking-wide" 
@@ -73,7 +78,7 @@ export default function Navbar() {
 
         {/* Button */}
         <motion.button 
-          onClick={() => scrollTo('contact')}
+          onClick={(e) => scrollTo(e, 'contact')}
           whileHover={{ scale: 1.05, backgroundColor: 'rgba(255,255,255,0.9)' }}
           whileTap={{ scale: 0.95 }}
           className="font-label rounded-full bg-white text-primary shrink-0 flex items-center justify-center px-4 md:px-6 text-[10px] md:text-[11px] h-[32px] md:h-[40px] font-bold uppercase tracking-wider cursor-pointer mr-1"
