@@ -9,19 +9,9 @@ export default function Hero() {
   useGSAP(() => {
     const tl = gsap.timeline();
     
-    tl.fromTo('.hero-title', 
-      { opacity: 0, y: 50 },
-      { opacity: 1, y: 0, duration: 1, ease: 'power3.out', delay: 0.2 }
-    )
-    .fromTo('.hero-text', 
-      { opacity: 0, y: 30 },
-      { opacity: 1, y: 0, duration: 0.8, ease: 'power3.out' },
-      '-=0.6'
-    )
-    .fromTo('.hero-video-container',
+    tl.fromTo('.hero-video-container',
       { opacity: 0, scale: 0.95, y: 50 },
-      { opacity: 1, scale: 1, y: 0, duration: 1.2, ease: 'power3.out' },
-      '-=0.6'
+      { opacity: 1, scale: 1, y: 0, duration: 1.2, ease: 'power3.out', delay: 0.6 }
     );
 
 
@@ -31,7 +21,7 @@ export default function Hero() {
     <section ref={heroRef} className="px-margin max-w-[1728px] mx-auto flex flex-col items-center text-center relative overflow-hidden bg-page-bg min-h-[85vh] md:min-h-screen">
       
       <div className="absolute top-[12vh] md:top-[18vh] left-0 right-0 z-10 px-4 w-full mt-4">
-        <h1 className="hero-title text-2xl md:text-4xl font-semibold text-slate-900 tracking-tight">
+        <h1 className="hero-title text-2xl md:text-4xl font-semibold text-slate-900 tracking-tight css-fade-up">
           Donnez une nouvelle dimension <br />
           <span className="text-3xl md:text-5xl font-bold mt-1 leading-none tracking-tighter block pt-2 text-primary">
             à vos archives
@@ -40,7 +30,7 @@ export default function Hero() {
       </div>
 
       <div className="absolute bottom-[8vh] md:bottom-[12vh] left-0 right-0 z-10 px-4 w-full">
-        <p className="hero-text font-body-lg text-sm md:text-lg text-slate-700 max-w-2xl mx-auto font-medium">
+        <p className="hero-text font-body-lg text-sm md:text-lg text-slate-700 max-w-2xl mx-auto font-medium css-fade-up-delayed">
           Libérez totalement le potentiel de vos données et documents grâce à notre expertise en gestion de l'information et digitalisation.
         </p>
       </div>
