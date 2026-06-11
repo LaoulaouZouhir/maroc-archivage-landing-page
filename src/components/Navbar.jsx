@@ -38,7 +38,8 @@ export default function Navbar() {
         {/* Links */}
         <nav className="flex items-center gap-3 md:gap-8 px-4 md:px-8">
           <motion.a 
-            onClick={() => scrollTo('services')}
+            href="#services"
+            onClick={(e) => { e.preventDefault(); scrollTo('services'); }}
             whileHover={{ scale: 1.05, color: '#ffffff' }}
             whileTap={{ scale: 0.95 }}
             className="font-label text-[11px] md:text-[13px] text-white/80 hover:text-white cursor-pointer tracking-wide" 
@@ -46,7 +47,8 @@ export default function Navbar() {
             Services
           </motion.a>
           <motion.a 
-            onClick={() => scrollTo('expertise')}
+            href="#expertise"
+            onClick={(e) => { e.preventDefault(); scrollTo('expertise'); }}
             whileHover={{ scale: 1.05, color: '#ffffff' }}
             whileTap={{ scale: 0.95 }}
             className="font-label text-[11px] md:text-[13px] text-white/80 hover:text-white cursor-pointer tracking-wide" 
@@ -54,7 +56,8 @@ export default function Navbar() {
             Expertise
           </motion.a>
           <motion.a 
-            onClick={() => scrollTo('updates')}
+            href="#updates"
+            onClick={(e) => { e.preventDefault(); scrollTo('updates'); }}
             whileHover={{ scale: 1.05, color: '#ffffff' }}
             whileTap={{ scale: 0.95 }}
             className="font-label text-[11px] md:text-[13px] text-white/80 hover:text-white cursor-pointer tracking-wide" 
@@ -62,7 +65,8 @@ export default function Navbar() {
             Actualités
           </motion.a>
           <motion.a 
-            onClick={() => scrollTo('contact')}
+            href="#contact"
+            onClick={(e) => { e.preventDefault(); scrollTo('contact'); }}
             whileHover={{ scale: 1.05, color: '#ffffff' }}
             whileTap={{ scale: 0.95 }}
             className="font-label text-[11px] md:text-[13px] text-white/80 hover:text-white cursor-pointer tracking-wide" 

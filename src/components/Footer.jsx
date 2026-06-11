@@ -8,7 +8,7 @@ export default function Footer() {
             <div className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center shrink-0 bg-white">
               <img alt="Maroc Archivage Logo" className="w-full h-full object-contain p-1.5" src="/img/logo.png"/>
             </div>
-            <p className="font-body-md text-white/50 max-w-xs">
+            <p className="font-body-md text-white/70 max-w-xs">
               Le leader de la gestion documentaire au Maroc. Libérez le potentiel de vos données grâce à notre expertise.
             </p>
             <div className="flex gap-4">
@@ -24,7 +24,7 @@ export default function Footer() {
           
           {/* Navigation Columns */}
           <div>
-            <h4 className="font-label text-white mb-6 uppercase tracking-widest text-[10px]">Services</h4>
+            <h3 className="font-label text-white mb-6 uppercase tracking-widest text-[10px]">Services</h3>
             <ul className="flex flex-col gap-4">
               <li><a className="font-body-md text-white/60 hover:text-white transition-colors" href="#">Audit &amp; Conseil</a></li>
               <li><a className="font-body-md text-white/60 hover:text-white transition-colors" href="#">Digitalisation</a></li>
@@ -34,7 +34,7 @@ export default function Footer() {
           </div>
           
           <div>
-            <h4 className="font-label text-white mb-6 uppercase tracking-widest text-[10px]">Société</h4>
+            <h3 className="font-label text-white mb-6 uppercase tracking-widest text-[10px]">Société</h3>
             <ul className="flex flex-col gap-4">
               <li><a className="font-body-md text-white/60 hover:text-white transition-colors" href="#">À Propos</a></li>
               <li><a className="font-body-md text-white/60 hover:text-white transition-colors" href="#">Carrières</a></li>
@@ -44,7 +44,7 @@ export default function Footer() {
           </div>
           
           <div>
-            <h4 className="font-label text-white mb-6 uppercase tracking-widest text-[10px]">Ressources</h4>
+            <h3 className="font-label text-white mb-6 uppercase tracking-widest text-[10px]">Ressources</h3>
             <ul className="flex flex-col gap-4">
               <li><a className="font-body-md text-white/60 hover:text-white transition-colors" href="#">Blog</a></li>
               <li><a className="font-body-md text-white/60 hover:text-white transition-colors" href="#">Documentation</a></li>
@@ -55,11 +55,11 @@ export default function Footer() {
         </div>
         
         <div className="pt-[32px] border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="font-label text-[11px] text-white/40">© 2024 Maroc Archivage S.A.R.L. Tous droits réservés.</p>
+          <p className="font-label text-[11px] text-white/70">© 2024 Maroc Archivage S.A.R.L. Tous droits réservés.</p>
           <div className="flex gap-8">
-            <a className="font-label text-[11px] text-white/40 hover:text-white transition-colors" href="#">Politique de Confidentialité</a>
-            <a className="font-label text-[11px] text-white/40 hover:text-white transition-colors" href="#">Conditions d'Utilisation</a>
-            <a className="font-label text-[11px] text-white/40 hover:text-white transition-colors" href="#">Cookies</a>
+            <a className="font-label text-[11px] text-white/70 hover:text-white transition-colors" href="#">Politique de Confidentialité</a>
+            <a className="font-label text-[11px] text-white/70 hover:text-white transition-colors" href="#">Conditions d'Utilisation</a>
+            <a className="font-label text-[11px] text-white/70 hover:text-white transition-colors" href="#">Cookies</a>
           </div>
         </div>
       </div>

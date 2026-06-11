@@ -54,6 +54,7 @@ export default function Hero() {
           autoPlay
           loop
           preload="auto"
+          aria-hidden="true"
         >
           <source src="/hero_video_desktop.mp4" media="(min-width: 768px)" type="video/mp4" />
           <source src="/hero_video.mp4" type="video/mp4" />

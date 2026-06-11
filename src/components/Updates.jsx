@@ -48,7 +48,7 @@ export default function Updates() {
               <div className={`absolute inset-0 bg-gradient-to-t ${item.gradient} to-transparent`}></div>
             </div>
             <p className="font-label text-xs text-muted mb-3">{item.cat}</p>
-            <h4 className="font-h3 text-xl font-bold text-text group-hover:text-primary transition-colors">{item.title}</h4>
+            <h3 className="font-h3 text-xl font-bold text-text group-hover:text-primary transition-colors">{item.title}</h3>
           </motion.div>
         ))}
       </div>

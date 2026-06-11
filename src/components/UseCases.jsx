@@ -70,7 +70,7 @@ export default function UseCases() {
             />
             <div className={`absolute inset-0 bg-gradient-to-t ${c.gradient}`}></div>
             <div className="relative z-10 transition-transform duration-500 group-hover:translate-y-[-10px]">
-              <h4 className="font-h3 text-xl font-bold mb-2 text-white">{c.title}</h4>
+              <h3 className="font-h3 text-xl font-bold mb-2 text-white">{c.title}</h3>
               <p className="font-body-md text-white/80">{c.desc}</p>
             </div>
           </motion.div>

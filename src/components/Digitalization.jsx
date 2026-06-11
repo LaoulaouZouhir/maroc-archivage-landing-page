@@ -51,7 +51,7 @@ export default function Digitalization() {
                 transition={{ delay: idx * 0.2 }}
                 className="opacity-60 hover:opacity-100 transition-opacity cursor-default"
               >
-                <h4 className="font-h3 text-xl font-bold mb-2 text-text">{feature.title}</h4>
+                <h3 className="font-h3 text-xl font-bold mb-2 text-text">{feature.title}</h3>
                 <p className="font-body-md text-muted leading-relaxed">{feature.desc}</p>
               </motion.div>
             ))}
