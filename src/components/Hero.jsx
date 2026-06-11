@@ -55,9 +55,11 @@ export default function Hero() {
           loop
           preload="auto"
           aria-hidden="true"
+          title="Video d'arrière-plan décorative"
         >
           <source src="/hero_video_desktop.mp4" media="(min-width: 768px)" type="video/mp4" />
           <source src="/hero_video.mp4" type="video/mp4" />
+          <track kind="captions" srcLang="fr" label="Français" />
         </video>
         {/* Soft, tall ambient bottom fade */}
         <div className="absolute bottom-0 left-0 right-0 h-[25vh] bg-gradient-to-t from-page-bg to-transparent z-10"></div>

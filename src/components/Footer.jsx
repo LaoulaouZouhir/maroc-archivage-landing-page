@@ -54,9 +54,11 @@ export default function Footer() {
           </div>
         </div>
         
-        <div className="pt-[32px] border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="font-label text-[11px] text-white/70">© 2024 Maroc Archivage S.A.R.L. Tous droits réservés.</p>
-          <div className="flex gap-8">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4 pt-[32px] border-t border-white/10">
+          <p className="font-label text-[11px] text-white/70">
+            © 2024 Maroc Archivage S.A.R.L. Tous droits réservés.
+          </p>
+          <div className="flex gap-6">
             <a className="font-label text-[11px] text-white/70 hover:text-white transition-colors" href="#">Politique de Confidentialité</a>
             <a className="font-label text-[11px] text-white/70 hover:text-white transition-colors" href="#">Conditions d'Utilisation</a>
             <a className="font-label text-[11px] text-white/70 hover:text-white transition-colors" href="#">Cookies</a>
