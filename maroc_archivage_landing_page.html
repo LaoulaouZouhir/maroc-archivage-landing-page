@@ -1,0 +1,508 @@
+<html lang="fr"><head></head><body class="text-text font-body-lg min-h-screen antialiased selection:bg-primary selection:text-white bg-page-bg">```html
+
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Maroc Archivage - Expertise en Gestion de l'Information et Archivage</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+                  "page-bg": "#FDF8F8",
+                  "panel-bg": "#F7F3F2",
+                  "soft-card": "#EBE7E6",
+                  "soft-card-2": "#F3EFEE",
+                  "text": "#1B1B1B",
+                  "muted": "#5E5E5E",
+                  "muted-light": "#8E8E8E",
+                  "line": "#DDD9D8",
+                  "black": "#1B1B1B",
+                  "deep-black": "#0F172A",
+                  "white-card": "#FFFFFF",
+                  "white-soft": "#FDF8F8",
+                  "primary": "#1E3A8A",
+                  "primary-dark": "#172554",
+                  "accent": "#64748B"
+          },
+          "borderRadius": {
+                  "DEFAULT": "0.125rem",
+                  "lg": "0.25rem",
+                  "xl": "0.5rem",
+                  "full": "9999px",
+                  "3xl": "2rem",
+                  "4xl": "3rem"
+          },
+          "spacing": {
+                  "gutter": "24px",
+                  "unit": "4px",
+                  "sm": "16px",
+                  "md": "32px",
+                  "xl": "128px",
+                  "lg": "64px",
+                  "margin": "40px",
+                  "xs": "8px",
+                  "section": "160px"
+          },
+          "fontFamily": {
+                  "label": ["Helvetica", "Arial", "sans-serif"],
+                  "body-lg": ["Helvetica", "Arial", "sans-serif"],
+                  "display": ["Helvetica", "Arial", "sans-serif"],
+                  "h2": ["Helvetica", "Arial", "sans-serif"],
+                  "h1": ["Helvetica", "Arial", "sans-serif"],
+                  "h3": ["Helvetica", "Arial", "sans-serif"],
+                  "body-md": ["Helvetica", "Arial", "sans-serif"]
+          },
+          "fontSize": {
+                  "label": ["12px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                  "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+                  "display": ["82px", { "lineHeight": "1.05", "letterSpacing": "-0.04em", "fontWeight": "700" }],
+                  "h2": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                  "h1": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.03em", "fontWeight": "700" }],
+                  "h3": ["24px", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                  "body-md": ["15px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }]
+          }
+  },
+      },
+    }
+  </script>
+<style>
+    body {
+      background-color: theme('colors.page-bg');
+    }
+    .text-balance { text-wrap: balance; }
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(calc(-50% - 50px)); }
+    }
+    .animate-marquee {
+      display: flex;
+      width: max-content;
+      animation: scroll 30s linear infinite;
+    }
+    .marquee-container {
+      overflow: hidden;
+      width: 100%;
+    }
+    .glass-navy {
+      background: rgba(30, 58, 138, 0.05);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(30, 58, 138, 0.1);
+    }
+    .hero-gradient {
+      background: radial-gradient(circle at top right, #1e3a8a, #0f172a);
+    }
+  </style>
+<!-- 1. Floating Nav (TopAppBar) -->
+<header class="fixed top-[24px] left-0 right-0 z-50 flex items-center justify-center px-sm w-full pointer-events-none">
+<div class="pointer-events-auto w-full max-w-[750px] flex items-center justify-between bg-[#111827]/90 backdrop-blur-xl rounded-full px-xs py-xs shadow-2xl border border-white/10 h-[56px]">
+<div class="flex items-center gap-md pl-xs">
+<div class="w-[34px] h-[34px] rounded-full border border-white/20 flex items-center justify-center shrink-0 bg-white"><img alt="Maroc Archivage Logo" class="w-full h-full object-contain p-1.5" src="https://lh3.googleusercontent.com/aida/AP1WRLvsSgbGKdbcLKOA2HcB3eeu_aMqqcULpCSL4w4vIud0k19Nos0f79MOooDkWKD2PYf3YL7YbMwyFVO3vnfAS4ktIOSvjjM3iJ0f9ev9xYZdRHxZHaugY8uWL6eN6knezKF3lM8MH76kwLHZsuQHrUc22Sq3dzRucrD8I8qGic_8JzTlXHvexEO0n0PcZAikUbiccpQMJK17Orh6grziLuFhveX91WEnDCK6dqLOJDmkSXP5b719rbVk7Jw"/></div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="font-label text-label text-white/70 hover:text-white transition-colors duration-300" href="#">Services</a>
+<a class="font-label text-label text-white/70 hover:text-white transition-colors duration-300" href="#">Expertise</a>
+<a class="font-label text-label text-white/70 hover:text-white transition-colors duration-300" href="#">À Propos</a>
+<a class="font-label text-label text-white/70 hover:text-white transition-colors duration-300" href="#">Contact</a>
+</nav>
+</div>
+<button class="font-label rounded-full bg-white text-black hover:bg-white/90 transition-all duration-300 shrink-0 flex items-center px-4 text-[10px] h-[32px] font-bold uppercase tracking-wider">
+        Demander un audit
+      </button>
+</div>
+</header>
+<main>
+<!-- 1. Hero -->
+<section class="pt-[240px] px-margin max-w-[1728px] mx-auto flex flex-col items-center text-center relative overflow-visible bg-page-bg pb-[200px]">
+<h1 class="font-display text-display text-balance max-w-5xl mb-lg text-text tracking-tighter">Donnez une nouvelle dimension à vos archives</h1>
+<p class="font-body-lg text-body-lg text-muted max-w-2xl mb-lg">
+        Libérez totalement le potentiel de vos données et documents grâce à notre expertise en gestion de l'information et digitalisation.
+      </p>
+<div class="w-full max-w-[1492px] hero-gradient overflow-hidden shadow-2xl relative z-10 rounded-[40px] h-[800px]">
+<img alt="Expertise Archivage" class="w-full h-full object-cover mix-blend-overlay opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZfadtPwCaL7GcKGqde5_m46RsgQuGHyvmFJKZWsW5jfFqnNirmZPOdmGitXGSosoyvd2ARpUMWjjL8IEKefG6Ke85eAGiFMBHIfFA02wVwfcf75CnI7Zlw-OjEat9LRRuqHbfAWLeBZeTEUbVQRAoPIjSlWUOZmW8R32Bk0XUblejaVIpv6gSC4cngTCtp7tXSmIz5jJIUVZIPoKSyGDhck_ulpZZnIfCQmxw2h73JqSgD__x2T1wiMf4Q_TQCvHgDTzQ3sY3JjqV"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#0f172a]/80 to-transparent"></div>
+</div>
+</section>
+<!-- 2. Trust Strip -->
+<section class="py-xl px-margin border-t border-line/30 max-w-[1728px] mx-auto flex flex-col items-center bg-page-bg relative z-0 pt-[40px]">
+<p class="font-label text-label text-muted mb-md uppercase tracking-widest text-center">Plus de 65 clients nous font confiance</p>
+<div class="flex justify-center items-center opacity-100 text-muted w-full">
+<div class="marquee-container">
+<div class="marquee-content animate-marquee flex gap-[100px] items-center text-primary/40">
+<span class="font-h3 text-h3 font-semibold tracking-tight hover:text-primary transition-all duration-300 cursor-default">National</span>
+<span class="font-h3 text-h3 font-semibold tracking-tight hover:text-primary transition-all duration-300 cursor-default">International</span>
+<span class="font-h3 text-h3 font-semibold tracking-tight hover:text-primary transition-all duration-300 cursor-default">Banque</span>
+<span class="font-h3 text-h3 font-semibold tracking-tight hover:text-primary transition-all duration-300 cursor-default">Assurance</span>
+<span class="font-h3 text-h3 font-semibold tracking-tight hover:text-primary transition-all duration-300 cursor-default">Public</span>
+<!-- Duplicate for seamless loop -->
+<span class="font-h3 text-h3 font-semibold tracking-tight hover:text-primary transition-all duration-300 cursor-default">National</span>
+<span class="font-h3 text-h3 font-semibold tracking-tight hover:text-primary transition-all duration-300 cursor-default">International</span>
+<span class="font-h3 text-h3 font-semibold tracking-tight hover:text-primary transition-all duration-300 cursor-default">Banque</span>
+<span class="font-h3 text-h3 font-semibold tracking-tight hover:text-primary transition-all duration-300 cursor-default">Assurance</span>
+<span class="font-h3 text-h3 font-semibold tracking-tight hover:text-primary transition-all duration-300 cursor-default">Public</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Floating Visual Collage (Expertise Section) -->
+<section class="min-h-[1400px] w-full max-w-[1728px] mx-auto relative overflow-hidden bg-page-bg py-xl">
+<!-- Central Anchor -->
+<div class="absolute inset-0 flex justify-center items-center opacity-10 pointer-events-none mt-20">
+<h2 class="font-display text-[110px] font-bold text-primary tracking-tighter leading-[0.9] text-center">Expertise en Gestion<br/>Documentaire</h2>
+</div>
+<!-- 1. Top-left: Image with Glass UI Overlay -->
+<div class="absolute rounded-[32px] overflow-hidden bg-white/40 backdrop-blur-2xl border border-white/60 shadow-xl" style="left: 10%; top: 12%; width: 340px; height: 260px; z-index: 5;">
+<img class="w-full h-full object-cover mix-blend-multiply opacity-20 absolute inset-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGxwLNMP2KVAWtuqvWXiFZkBm5YgSXjM45PkkRPvB3NsuAPX4Nse6nAySmOSPxXiaWvlTk0fB0Pagx0EkNf1L8x3CFyxgAWpQbdP2z4ZXhaiVorAeLCKBcI2qvs9oG9HqdMdiJrUYvBgL1Dr8nKNzygffqFMIlgWyshucf41s65I_hV3kCGtjFYShml4zOn9O6MuvVW54WVcjP7bBLEAYguBfutmc0Yq73HP9-yBiY6b98be0hC6KYAZFesHH3FkL4Gx0Yks2fyrpu"/>
+<div class="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 bg-white/60 backdrop-blur-xl border border-white/80 rounded-2xl p-4 shadow-lg">
+<div class="flex justify-between items-center mb-2">
+<span class="font-label text-[10px] text-primary font-bold uppercase tracking-wider">Numérisation</span>
+<span class="font-label text-[10px] text-primary font-bold">100% Indexé</span>
+</div>
+<div class="w-full bg-primary/10 rounded-full h-1.5">
+<div class="bg-primary w-[100%] h-1.5 rounded-full"></div>
+</div>
+</div>
+</div>
+<!-- 2. Top-right: Tall Card with Image -->
+<div class="absolute rounded-[32px] overflow-hidden bg-slate-900 shadow-2xl" style="right: 12%; top: 15%; width: 280px; height: 320px; z-index: 5;">
+<img class="w-full h-full object-cover opacity-60 mix-blend-soft-light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRI6ZfedfqJ42Kz8fkZTlqC5CbQ5Q_0kVkLxIu7Xh8-ABjTl2K4v_yJEBQE1wi3AZMYD9IMvFxFOJyc86piFVAfQ0g6nyc1fRoYl7wB1_YDB3zlrCqOGtEow28qlTRV6LL9s1-rRPvAYojJgQhjJ9ERQ7Jf-IhHeg0bAcA4QWd3YKyDnVxSjTGeJ--ir7xqCghMtZPJ5OjvBwWSTiw7xPHbFrwOa_f5RTQGV6WOEWxuC-xwV7Ayb1q0kBzYF_oQHCxP3Dn3PL-aewa"/>
+<div class="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-white text-sm">security</span>
+</div>
+<div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+<span class="font-label text-[10px] text-white/70 uppercase tracking-widest">Protection des données</span>
+</div>
+</div>
+<!-- 3. Mid-left: Floating Glass UI -->
+<div class="absolute rounded-[28px] overflow-hidden bg-white/40 backdrop-blur-3xl border border-white/60 shadow-[0_12px_40px_rgba(0,0,0,0.08)] flex flex-col p-5" style="left: 6%; top: 45%; width: 260px; z-index: 15;">
+<div class="flex items-center justify-between mb-4">
+<span class="font-label text-xs font-bold text-primary">Archivage Légal</span>
+<div class="w-10 h-6 bg-primary/20 rounded-full relative shadow-inner cursor-pointer">
+<div class="absolute right-1 top-1 w-4 h-4 bg-primary rounded-full shadow-sm"></div>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-white text-sm">cloud_done</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label text-[11px] font-bold text-primary">GED &amp; ECM</span>
+<span class="font-body-md text-[12px] text-muted leading-tight">Opérationnel</span>
+</div>
+</div>
+</div>
+<!-- 4. Mid-right: Image with Label -->
+<div class="absolute rounded-[32px] overflow-hidden bg-slate-100 border border-line shadow-2xl" style="right: 8%; top: 52%; width: 320px; height: 220px; z-index: 5;">
+<img class="w-full h-full object-cover opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRd7pAyBrUx31zx6klyDiCWD04EiIaiDfNYNdGO8HozSTYH3bTc4IhWoBbOh4CpW4jAmMk2H_ecdJwzZL71ta4NvHIyMqapKo2BK36h0hn674xlIS0FoLhl6jQwDTwu_Idk9ZLj6MN8k5s-VrWMSox9J5YNpnlpqVlAVnzCXtAeDkwyvNWzXtGXt76wUk85CfXUmdE9Vi6RxqxkyBORzc1__OdpVEqiYNrMD1dKFJIU7gC874F--k_Kf5C1_yMSnhoytWkS9XWPwsm"/>
+<div class="absolute top-4 left-4 bg-primary/90 backdrop-blur-xl px-4 py-2 rounded-full border border-white/20 shadow-sm flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-blue-400"></div>
+<span class="font-label text-[10px] font-bold text-white uppercase tracking-wider">Conformité Normative</span>
+</div>
+</div>
+<!-- 5. Bottom-left: Large Image with Brand Voice -->
+<div class="absolute rounded-[32px] overflow-hidden bg-primary/5 backdrop-blur-2xl border border-primary/20 shadow-2xl" style="left: 15%; top: 72%; width: 380px; height: 260px; z-index: 5;">
+<img class="w-full h-full object-cover mix-blend-overlay opacity-30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJHfj4_xGj0yuLj8FKt6X72bCIskF-kJl3LA3T3_1-Qfv6mfKwCLXqKuU41nv1J3p_M1VLaKyUwt7jymaxu9IqrMBeOZwhDvKB2NclDw7qctzcy_CAPxlD6DRpxJ5uMf6G4nCRrvnMp59n2r2y9HaRxoemHYv9Vm4p_TMdRUwKitMvWXTR13rOY5umPLmIVd6L5RMbQMm1ZFC8-WMQdUrzWugK5J4Eh0Ph9XOn2e4G84KG4Az4KXAh3-n2Y52A1ycQ8Ow3OGXHosuz"/>
+<div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent"></div>
+<div class="absolute bottom-5 left-5 bg-white/90 backdrop-blur-xl px-4 py-2 rounded-full border border-line shadow-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">inventory_2</span>
+<span class="font-label text-[10px] font-bold text-primary uppercase tracking-wider">Stockage Sécurisé</span>
+</div>
+</div>
+<!-- 6. Bottom-right: Wide Image -->
+<div class="absolute rounded-[32px] overflow-hidden border border-line shadow-2xl" style="right: 15%; top: 78%; width: 360px; height: 240px; z-index: 5;">
+<img class="w-full h-full object-cover opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbheL8VQt2V3qxmEXBukkZcNptuzepd42MEKEg9-qDVlpepWCcPZIR5s9MzcSFv4FH-6IuiF9uWjjxSWg2IQ-A_CdbSU7IbdGFdbRPcFqz1DyoSSA1w-kOaLoqdLsFYVQuBBDENJ0aa2OHfgIFFJ1Y7GClriULppWYz7d7fGuv-GPC_YjW-mQfwtuP1rbtxhAb-IzFfX6o7nj41jI_XdcVGj6on-6bwuQl_W5NMa4g3MvEW_sVCeo4Tgf1W3QkrnYFQKfSyl3ScLps"/>
+</div>
+<!-- 7. Floating Comment / Profile -->
+<div class="absolute bg-white/90 backdrop-blur-3xl rounded-[24px] flex items-center gap-4 p-3 shadow-2xl border border-line z-20" style="left: 45%; top: 88%; width: max-content; z-index: 20;">
+<div class="w-10 h-10 rounded-full bg-soft-card overflow-hidden shadow-sm border border-line">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxUZpAK7kBAK1H5Anlz-i_nh19XyaGUt1hLDC6ZASnuBK2vRcwFDP46vx7HodMWCGvWJVA3aKLfp00pDRGNPsH0LVYvOGBSQ1KJIx2wTCxFcEJMNlnv9DHJKT0wyVelxRunXJN3d41Z2MPDK4poxQF_iybQaYL4ebVjC52RWnq9U6Y-VA7k5seZ7Z4c1n3nq7ply6CwSNm8-OH_B6wae1-h-Zmn2y3jh9urDyal2zhahuy408MHHCcPTmA9TNKUOA7WEsjuEy1iMvC"/>
+</div>
+<div class="flex flex-col pr-4">
+<span class="font-label text-[11px] text-primary font-bold">Client Satisfait</span>
+<span class="font-body-md text-[13px] text-text/80 leading-tight">Une gestion impeccable de nos dossiers !</span>
+</div>
+</div>
+</section>
+<!-- 4. Manifesto -->
+<section class="py-[200px] px-margin max-w-[1728px] mx-auto relative flex flex-col items-center text-center bg-page-bg">
+<div class="absolute top-0 right-[10%] w-[400px] h-[400px] opacity-10 pointer-events-none">
+<svg class="w-full h-full" fill="none" stroke="url(#manifesto-grad)" stroke-width="0.5" viewbox="0 0 100 100">
+<defs>
+<lineargradient id="manifesto-grad" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#1e3a8a"></stop>
+<stop offset="100%" stop-color="#64748b"></stop>
+</lineargradient>
+</defs>
+<circle cx="50" cy="50" r="48"></circle>
+<ellipse cx="50" cy="50" rx="24" ry="48"></ellipse>
+<ellipse cx="50" cy="50" rx="48" ry="24"></ellipse>
+<line x1="2" x2="98" y1="50" y2="50"></line>
+<line x1="50" x2="50" y1="2" y2="98"></line>
+</svg>
+</div>
+<h2 class="font-display text-[49px] leading-[1.1] text-balance tracking-tight text-text relative z-10 max-w-[1000px] font-light">
+    Alors que les volumes de données explosent, une source unique de vérité est cruciale. Maroc Archivage unifie votre stratégie documentaire.
+  </h2>
+</section>
+<!-- 5. Brand OS (ECM Section) -->
+<section class="py-[120px] px-margin max-w-[1728px] mx-auto bg-page-bg">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-[100px] items-center">
+<div class="bg-gradient-to-br from-slate-100 to-slate-200 rounded-[40px] p-8 h-[700px] flex items-center justify-center relative overflow-hidden border border-line shadow-sm">
+<div class="w-full max-w-md bg-white-card rounded-2xl shadow-xl border border-line/20 p-6">
+<div class="flex items-center justify-between mb-8">
+<span class="font-label font-bold text-sm text-primary">Archives Digitales</span>
+<span class="material-symbols-outlined text-muted">more_horiz</span>
+</div>
+<div class="space-y-4">
+<div class="flex items-center gap-4 p-3 hover:bg-slate-50 rounded-xl transition-colors">
+<span class="material-symbols-outlined text-primary">folder_zip</span>
+<span class="font-body-md font-medium text-text">Dossiers_Historiques</span>
+</div>
+<div class="flex items-center gap-4 p-3 hover:bg-slate-50 rounded-xl transition-colors">
+<span class="material-symbols-outlined text-accent">history_edu</span>
+<span class="font-body-md font-medium text-text">Contrats_Signés_2024</span>
+</div>
+<div class="flex items-center gap-4 p-3 hover:bg-slate-50 rounded-xl transition-colors">
+<span class="material-symbols-outlined text-primary-dark">description</span>
+<span class="font-body-md font-medium text-text">Pièces_Comptables</span>
+</div>
+<div class="flex items-center gap-4 p-3 hover:bg-slate-50 rounded-xl transition-colors">
+<span class="material-symbols-outlined text-slate-500">policy</span>
+<span class="font-body-md font-medium text-text">Registre_Légal</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col justify-center h-full max-w-lg">
+<h3 class="font-display text-h2 mb-12 font-bold tracking-tight text-text">La fondation intelligente pour votre gestion documentaire.</h3>
+<div class="relative pl-8 border-l-[3px] border-line space-y-12">
+<div class="absolute left-[-3px] top-0 w-[3px] h-1/3 bg-gradient-to-b from-primary to-accent"></div>
+<div>
+<h4 class="font-h3 text-xl font-bold mb-3 text-text">Connaissance Centralisée</h4>
+<p class="font-body-md text-muted leading-relaxed">Réunissez tous vos actifs, archives et documents stratégiques dans un environnement unique, cohérent et consultable.</p>
+</div>
+<div class="opacity-50 hover:opacity-100 transition-opacity">
+<h4 class="font-h3 text-xl font-bold mb-3 text-text">Intelligence Contextuelle</h4>
+<p class="font-body-md text-muted leading-relaxed">Nos solutions ECM comprennent les nuances de votre organisation, facilitant la recherche et l'extraction de données clés.</p>
+</div>
+<div class="opacity-50 hover:opacity-100 transition-opacity">
+<h4 class="font-h3 text-xl font-bold mb-3 text-text">Distribution Sécurisée</h4>
+<p class="font-body-md text-muted leading-relaxed">Assurez-vous que chaque collaborateur habilité accède instantanément aux documents approuvés et à jour.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. Digitalization Section -->
+<section class="py-[120px] px-margin max-w-[1728px] mx-auto bg-page-bg">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-[100px] items-center">
+<div class="flex flex-col justify-center h-full max-w-lg order-2 lg:order-1">
+<h3 class="font-display text-h2 mb-12 font-bold tracking-tight text-text">Digitalisation et dématérialisation de vos documents.</h3>
+<div class="relative pl-8 border-l-[3px] border-line space-y-10">
+<div class="absolute left-[-3px] top-0 w-[3px] h-1/4 bg-gradient-to-b from-primary to-accent"></div>
+<div>
+<h4 class="font-h3 text-xl font-bold mb-2 text-text">Alignement Normatif Automatisé</h4>
+<p class="font-body-md text-muted leading-relaxed">Chaque document numérisé est instantanément vérifié par rapport à vos règles de gestion et durées légales.</p>
+</div>
+<div class="opacity-60 hover:opacity-100 transition-opacity">
+<h4 class="font-h3 text-xl font-bold mb-2 text-text">Indexation Intelligente</h4>
+<p class="font-body-md text-muted leading-relaxed">Une technologie qui comprend le contenu, qu'il s'agisse de contrats, factures ou plans techniques.</p>
+</div>
+<div class="opacity-60 hover:opacity-100 transition-opacity">
+<h4 class="font-h3 text-xl font-bold mb-2 text-text">Bureau d'Ordre Digital</h4>
+<p class="font-body-md text-muted leading-relaxed">Gérez et déployez le courrier entrant et sortant de manière fluide à travers toute l'entreprise.</p>
+</div>
+<div class="opacity-60 hover:opacity-100 transition-opacity">
+<h4 class="font-h3 text-xl font-bold mb-2 text-text">Analyse Prédictive du Cycle de Vie</h4>
+<p class="font-body-md text-muted leading-relaxed">Anticipez les besoins de destruction ou de transfert aux archives historiques selon les obligations légales.</p>
+</div>
+</div>
+</div>
+<div class="bg-gradient-to-tr from-slate-200 to-slate-300 rounded-[40px] p-8 h-[700px] flex items-center justify-center relative overflow-hidden border border-line/30 shadow-inner order-1 lg:order-2">
+<div class="w-full max-w-lg bg-white/80 backdrop-blur-xl rounded-3xl shadow-2xl p-8 border border-white/50">
+<div class="flex items-center gap-3 mb-6">
+<div class="w-[24px] h-[24px] rounded-full border border-primary flex items-center justify-center shrink-0 bg-white"><img alt="Logo" class="w-full h-full object-contain p-0.5" src="https://lh3.googleusercontent.com/aida/AP1WRLvsSgbGKdbcLKOA2HcB3eeu_aMqqcULpCSL4w4vIud0k19Nos0f79MOooDkWKD2PYf3YL7YbMwyFVO3vnfAS4ktIOSvjjM3iJ0f9ev9xYZdRHxZHaugY8uWL6eN6knezKF3lM8MH76kwLHZsuQHrUc22Sq3dzRucrD8I8qGic_8JzTlXHvexEO0n0PcZAikUbiccpQMJK17Orh6grziLuFhveX91WEnDCK6dqLOJDmkSXP5b719rbVk7Jw"/></div>
+<span class="font-label text-xs font-bold text-primary">PLATEFORME GED</span>
+</div>
+<div class="bg-white/60 backdrop-blur-md rounded-xl p-4 mb-6 border border-line shadow-sm">
+<p class="font-body-md text-text">Recherche : "Contrat bail commercial 2023 Casablanca"... Indexation en cours pour un accès immédiat.</p>
+</div>
+<div class="flex justify-end">
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-md animate-pulse">
+<span class="material-symbols-outlined text-white text-sm">search_spark</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. Team Use Cases -->
+<section class="py-[160px] px-margin max-w-[1728px] mx-auto flex flex-col items-center bg-page-bg">
+<h2 class="font-display text-h2 mb-12 font-bold tracking-tight text-center text-text">Solutions pour chaque secteur d'activité.</h2>
+<div class="flex flex-wrap justify-center gap-3 mb-16">
+<button class="px-6 py-2 rounded-full bg-primary text-white font-label text-sm shadow-md">Finance</button>
+<button class="px-6 py-2 rounded-full bg-white text-text border border-line font-label text-sm hover:bg-slate-50 transition-colors shadow-sm">Juridique</button>
+<button class="px-6 py-2 rounded-full bg-white text-text border border-line font-label text-sm hover:bg-slate-50 transition-colors shadow-sm">RH</button>
+<button class="px-6 py-2 rounded-full bg-white text-text border border-line font-label text-sm hover:bg-slate-50 transition-colors shadow-sm">Logistique</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
+<div class="relative h-[400px] rounded-[32px] p-8 flex flex-col justify-end group overflow-hidden shadow-sm border border-line/20">
+<img alt="Conseil et Audit" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 grayscale group-hover:grayscale-0 opacity-40 group-hover:opacity-60 bg-slate-900" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChKRPJn1gSFDrt1GQDzfiU4I3yCzTQVQeuNO8ytisTcKlK31yEv5K86cdWMKJBg3GC95w5q1ERJKHJLKU3w-6SojCl15IPwtoKItbHfym_OWSwde4Lc_X0Q39r2NUE_oZu-ti8_Zs_OibuoUCAcJYE-cSQuZwNsvFjQJC5rdU9maW6xzUq0FkX5WNlRsxq4L4CR7oinVYlFK6v9BDjMPShHM5UEvXrG_3JYGqBIWaiRdb9MTmRBmaZdMBZC44wnynC-oFH9TaZlB9Q"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent"></div>
+<div class="relative z-10">
+<h4 class="font-h3 text-xl font-bold mb-2 text-white">Conseil et Audit</h4>
+<p class="font-body-md text-white/80">Expertise pour optimiser vos processus documentaires.</p>
+</div>
+</div>
+<div class="relative h-[400px] rounded-[32px] p-8 flex flex-col justify-end group overflow-hidden shadow-sm border border-line/20">
+<img alt="Conservation et Classement" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 grayscale group-hover:grayscale-0 opacity-40 group-hover:opacity-60 bg-slate-900" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABa0q5BJ_DreMgIZGB-8at3sYpuFks_tT431tznVrVWB2C49LzdUC651wzXTj9LD-7VYCWRRpo9bqyyAQ_b54KnjtoPjXSRfeIXbBgjwHXIr8Ojo51Y8MG8CC0mGtvupgQSf4RnLcvReiqPWlUs5L2KkemFlhV-MfAQAzfyxIvGWfFM2Orh3ChuU5A6sOS2VBQbJyPWAQcwMlr6YWpCbln_V8DC4Yo90e6mK4QAINc-FrScaJ_KPin-t6UJ12p4Dnl5CbWpvGS2GiO"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 to-transparent"></div>
+<div class="relative z-10">
+<h4 class="font-h3 text-xl font-bold mb-2 text-white">Conservation et Classement</h4>
+<p class="font-body-md text-white/80">Stockage sécurisé et organisation physique rigoureuse.</p>
+</div>
+</div>
+<div class="relative h-[400px] rounded-[32px] p-8 flex flex-col justify-end group overflow-hidden shadow-sm border border-line/20">
+<img alt="Ingénierie GED" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 grayscale group-hover:grayscale-0 opacity-40 group-hover:opacity-60 bg-slate-900" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAsZf4UPkmlE6_mXYyjLE0rRS6z3wyPwTyXyHBEx2fzb_1GTK9oiAbqHMYNp1BpaU32inyxnVzpmayXVCbCKB_1Vo5pWerZ__YxCtY56FNpcHMwYf9urWgXAJQyGfscYHxMbULHWIsDeg5XCImbVDEPCwNhnAFC1xNYFgDTRv4KBYk1lGhIhBi4Pez_FSe2stW1TrgJkEhZUjpZcpgdrnwOaIDJo-2fibASWue5TrVKAp0CiX5ahI1LePNwx8xkgPfEO5mMALLcQWo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-dark/90 to-transparent"></div>
+<div class="relative z-10">
+<h4 class="font-h3 text-xl font-bold mb-2 text-white">Ingénierie GED</h4>
+<p class="font-body-md text-white/80">Solutions sur mesure (Synology, Alfresco, Bureau d'ordre).</p>
+</div>
+</div>
+<div class="relative h-[400px] rounded-[32px] p-8 flex flex-col justify-end group overflow-hidden shadow-sm border border-line/20">
+<img alt="Destruction Certifiée" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 grayscale group-hover:grayscale-0 opacity-40 group-hover:opacity-60 bg-slate-900" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5cY_8WSiYE8XLX9-TC1PN-9mihq_rEdAuIWhtvcYj7w3Jym37KSRruLnz0ZQY5zy1_DktUdT0RLTDQ4dIOGeKAvBWKyz6Fg4AS8M9VGl8uRkbhFz7qmqDNDpZ-CnVzYng1m39Wxi--hMoM4aMjONRhxBfdlgygDuhMZXzobuhZkCisfF6llXxrL9fOU48PhgyUNZx5V5gH-adc6HxffpgIWavNNpFCUnafc-d7HEDWlEQx3S8yVrTddmzqlMzQIOc0ib4Bxpxxe-W"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-800/90 to-transparent"></div>
+<div class="relative z-10">
+<h4 class="font-h3 text-xl font-bold mb-2 text-white">Destruction Certifiée</h4>
+<p class="font-body-md text-white/80">Élimination sécurisée avec certificat de conformité.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. Testimonial -->
+<section class="py-[160px] px-margin max-w-[1200px] mx-auto flex flex-col items-center text-center bg-page-bg">
+<h2 class="font-display text-[40px] md:text-[56px] leading-[1.1] tracking-tight text-primary mb-16 text-balance max-w-[1000px] font-normal">
+    "Maroc Archivage a été fondée avec le désir de libérer les organisations des contraintes de gestion physique, leur permettant de se concentrer sur leur cœur de métier."
+  </h2>
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-full bg-slate-200 overflow-hidden shadow-md border border-line">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_dQOYUXm-9ocUk-1cRA5ZyP6tu7OdWwNIU7SRhouWt3u89anzj3A5_pr7FGCCICOiz6a2FoSpC-bN53AYbiVQ-spgKPawBtGZtLq-9c6QyNclym7oEuOsCnQllJenEGuMkAeM3mwnTOLdgJakEE63ozCYcDA2l-C2EQnZiozAakUbDrwJG_jxTwrvV9I5p2oiVPXIDBv-rltdG9P0TX6X2OUHQcwckpskXXJEawplcI8ff_rzn1YnIDgrniF27Vjc0Lz4LKcazue9"/>
+</div>
+<div class="text-left">
+<p class="font-label text-sm font-bold text-text">Directeur Général</p>
+<p class="font-label text-xs text-muted">Maroc Archivage S.A.R.L</p>
+</div>
+</div>
+</section>
+<!-- 9. Updates -->
+<section class="py-[120px] px-margin max-w-[1728px] mx-auto bg-page-bg">
+<div class="flex justify-between items-end mb-12">
+<h2 class="font-display text-h2 font-bold tracking-tight text-text">Actualités &amp; Innovations</h2>
+<button class="font-label text-sm font-bold border-b border-primary text-primary pb-1 hover:text-primary-dark hover:border-primary-dark transition-colors">Tout voir</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8"><!-- Card 1 -->
+<div class="group cursor-pointer">
+<div class="relative w-full h-[450px] rounded-[40px] mb-6 overflow-hidden shadow-xl border border-line bg-slate-900">
+<img alt="Transformation Digitale" class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChKRPJn1gSFDrt1GQDzfiU4I3yCzTQVQeuNO8ytisTcKlK31yEv5K86cdWMKJBg3GC95w5q1ERJKHJLKU3w-6SojCl15IPwtoKItbHfym_OWSwde4Lc_X0Q39r2NUE_oZu-ti8_Zs_OibuoUCAcJYE-cSQuZwNsvFjQJC5rdU9maW6xzUq0FkX5WNlRsxq4L4CR7oinVYlFK6v9BDjMPShHM5UEvXrG_3JYGqBIWaiRdb9MTmRBmaZdMBZC44wnynC-oFH9TaZlB9Q"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
+</div>
+<p class="font-label text-xs text-muted mb-3">Service • Oct 2024</p>
+<h4 class="font-h3 text-xl font-bold text-text group-hover:text-primary transition-colors">Accélérez votre transition vers la digitalisation</h4>
+</div>
+<!-- Card 2 -->
+<div class="group cursor-pointer">
+<div class="relative w-full h-[450px] rounded-[40px] mb-6 overflow-hidden shadow-xl border border-line bg-slate-900">
+<img alt="Gestion du Cycle de Vie" class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAsZf4UPkmlE6_mXYyjLE0rRS6z3wyPwTyXyHBEx2fzb_1GTK9oiAbqHMYNp1BpaU32inyxnVzpmayXVCbCKB_1Vo5pWerZ__YxCtY56FNpcHMwYf9urWgXAJQyGfscYHxMbULHWIsDeg5XCImbVDEPCwNhnAFC1xNYFgDTRv4KBYk1lGhIhBi4Pez_FSe2stW1TrgJkEhZUjpZcpgdrnwOaIDJo-2fibASWue5TrVKAp0CiX5ahI1LePNwx8xkgPfEO5mMALLcQWo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent"></div>
+</div>
+<p class="font-label text-xs text-muted mb-3">Expertise • Sep 2024</p>
+<h4 class="font-h3 text-xl font-bold text-text group-hover:text-primary transition-colors">Le cycle de vie documentaire moderne</h4>
+</div>
+<!-- Card 3 -->
+<div class="group cursor-pointer">
+<div class="relative w-full h-[450px] rounded-[40px] mb-6 overflow-hidden shadow-xl border border-line bg-slate-900">
+<img alt="Partenariats Stratégiques" class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5cY_8WSiYE8XLX9-TC1PN-9mihq_rEdAuIWhtvcYj7w3Jym37KSRruLnz0ZQY5zy1_DktUdT0RLTDQ4dIOGeKAvBWKyz6Fg4AS8M9VGl8uRkbhFz7qmqDNDpZ-CnVzYng1m39Wxi--hMoM4aMjONRhxBfdlgygDuhMZXzobuhZkCisfF6llXxrL9fOU48PhgyUNZx5V5gH-adc6HxffpgIWavNNpFCUnafc-d7HEDWlEQx3S8yVrTddmzqlMzQIOc0ib4Bxpxxe-W"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-dark/40 to-transparent"></div>
+</div>
+<p class="font-label text-xs text-muted mb-3">Société • Aug 2024</p>
+<h4 class="font-h3 text-xl font-bold text-text group-hover:text-primary transition-colors">Maroc Archivage renforce sa présence nationale</h4>
+</div></div></section>
+<section class="py-section px-margin bg-page-bg">
+<div class="max-w-screen-xl mx-auto flex flex-col items-center text-center">
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-12 h-12 rounded-full border border-primary flex items-center justify-center mb-12 bg-white"><img alt="Maroc Archivage Logo" class="w-full h-full object-contain p-1.5" src="https://lh3.googleusercontent.com/aida/AP1WRLvsSgbGKdbcLKOA2HcB3eeu_aMqqcULpCSL4w4vIud0k19Nos0f79MOooDkWKD2PYf3YL7YbMwyFVO3vnfAS4ktIOSvjjM3iJ0f9ev9xYZdRHxZHaugY8uWL6eN6knezKF3lM8MH76kwLHZsuQHrUc22Sq3dzRucrD8I8qGic_8JzTlXHvexEO0n0PcZAikUbiccpQMJK17Orh6grziLuFhveX91WEnDCK6dqLOJDmkSXP5b719rbVk7Jw"/></div>
+<h2 class="font-display text-[56px] md:text-[80px] font-bold text-primary tracking-tighter leading-[1.05] mb-12 max-w-4xl text-balance">
+        L'excellence en gestion de l'information
+      </h2>
+<div class="flex flex-col sm:flex-row gap-6"><button class="bg-transparent border border-primary text-primary font-label rounded-full hover:bg-primary hover:text-white transition-all duration-300 shrink-0 flex items-center px-6 text-[10px] h-[40px] font-bold uppercase tracking-wider">Prendre rendez-vous</button>
+<button class="bg-primary text-white font-label rounded-full hover:bg-primary-dark transition-all duration-300 shrink-0 flex items-center px-6 text-[10px] h-[40px] font-bold uppercase tracking-wider shadow-md">
+          Demander un audit
+        </button></div>
+</div>
+</div>
+</section></main><footer class="bg-[#0f172a] text-white pt-xl pb-lg px-margin rounded-t-[64px] relative z-20">
+<div class="max-w-[1728px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-xl mb-xl">
+<!-- Brand Column -->
+<div class="flex flex-col gap-8">
+<div class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center shrink-0 bg-white"><img alt="Maroc Archivage Logo" class="w-full h-full object-contain p-1.5" src="https://lh3.googleusercontent.com/aida/AP1WRLvsSgbGKdbcLKOA2HcB3eeu_aMqqcULpCSL4w4vIud0k19Nos0f79MOooDkWKD2PYf3YL7YbMwyFVO3vnfAS4ktIOSvjjM3iJ0f9ev9xYZdRHxZHaugY8uWL6eN6knezKF3lM8MH76kwLHZsuQHrUc22Sq3dzRucrD8I8qGic_8JzTlXHvexEO0n0PcZAikUbiccpQMJK17Orh6grziLuFhveX91WEnDCK6dqLOJDmkSXP5b719rbVk7Jw"/></div>
+<p class="font-body-md text-white/50 max-w-xs">
+          Le leader de la gestion documentaire au Maroc. Libérez le potentiel de vos données grâce à notre expertise.
+        </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/10 transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/10 transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">public</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/10 transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">hub</span>
+</a>
+</div>
+</div>
+<!-- Navigation Columns -->
+<div>
+<h4 class="font-label text-white mb-6 uppercase tracking-widest text-[10px]">Services</h4>
+<ul class="flex flex-col gap-4">
+<li><a class="font-body-md text-white/60 hover:text-white transition-colors" href="#">Audit &amp; Conseil</a></li>
+<li><a class="font-body-md text-white/60 hover:text-white transition-colors" href="#">Digitalisation</a></li>
+<li><a class="font-body-md text-white/60 hover:text-white transition-colors" href="#">Conservation</a></li>
+<li><a class="font-body-md text-white/60 hover:text-white transition-colors" href="#">Solutions GED</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label text-white mb-6 uppercase tracking-widest text-[10px]">Société</h4>
+<ul class="flex flex-col gap-4">
+<li><a class="font-body-md text-white/60 hover:text-white transition-colors" href="#">À Propos</a></li>
+<li><a class="font-body-md text-white/60 hover:text-white transition-colors" href="#">Carrières</a></li>
+<li><a class="font-body-md text-white/60 hover:text-white transition-colors" href="#">Actualités</a></li>
+<li><a class="font-body-md text-white/60 hover:text-white transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label text-white mb-6 uppercase tracking-widest text-[10px]">Ressources</h4>
+<ul class="flex flex-col gap-4">
+<li><a class="font-body-md text-white/60 hover:text-white transition-colors" href="#">Blog</a></li>
+<li><a class="font-body-md text-white/60 hover:text-white transition-colors" href="#">Documentation</a></li>
+<li><a class="font-body-md text-white/60 hover:text-white transition-colors" href="#">Législation</a></li>
+<li><a class="font-body-md text-white/60 hover:text-white transition-colors" href="#">Support</a></li>
+</ul>
+</div>
+</div>
+<div class="pt-md border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-label text-[11px] text-white/40">© 2024 Maroc Archivage S.A.R.L. Tous droits réservés.</p>
+<div class="flex gap-8">
+<a class="font-label text-[11px] text-white/40 hover:text-white transition-colors" href="#">Politique de Confidentialité</a>
+<a class="font-label text-[11px] text-white/40 hover:text-white transition-colors" href="#">Conditions d'Utilisation</a>
+<a class="font-label text-[11px] text-white/40 hover:text-white transition-colors" href="#">Cookies</a>
+</div>
+</div>
+</div>
+</footer>```</body></html>
